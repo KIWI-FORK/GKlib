@@ -76,7 +76,8 @@ if(GDB)
   set(GKlib_COPTS "${GKlib_COPTS} -g")
   set(GKlib_COPTIONS "${GKlib_COPTIONS} -Werror")
 else()
-  set(GKlib_COPTS "-O3")
+  # disable code optimization:
+  # set(GKlib_COPTS "-O3")
 endif(GDB)
 
 
